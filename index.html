@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="quoteApp">
+  <head>
+    <meta charset="utf-8">
+    <title>QuoteBook</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body ng-controller = "quoteCNTRL">
+    <container class="page-container">
+        <header>Quote Book</header>
+        <!--text input, quote input,submit-->
+        <input type="text" placeholder="Add new quote!" ng-model='quote.text'>
+        <input type="text" placeholder="Quotes author!" ng-model='quote.author'>
+        <button ng-click="getNewQuote()">Add Quote</button>
+
+        <div>
+              <!--quotes-->
+        </div>
+    </container>
+
+
+
+
+
+
+
+
+    <script src=""></script> <!--jQuery-->
+    <script src=""></script> <!--bootstrap-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script> <!--Angular-->
+    <script src="appJS/app.js"></script> <!--module-->
+    <script src="appJS/controller.js"></script> <!--controller-->
+    <script src="appJS/service.js"></script> <!--service-->
+  </body>
+</html>
